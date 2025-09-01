@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.container {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo general de cada cuadro */
+.cuadro {
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.cuadro h2 {
+    color: #504ABC;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Inputs y selects */
+.cuadro input, .cuadro select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Botón ENVIAR */
+.boton-cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-cuadro button {
+    width: 50%;
+    padding: 12px;
+    background-color: #504ABC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-cuadro button:hover {
+    background-color: #403a9e;
+}
+
+/* Tabla de salidas */
+.tabla-salidas table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-salidas table th {
+    background-color: #504ABC;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-salidas table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tabla-salidas table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

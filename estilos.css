@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f4f6f9;
+}
+
+h2 {
+    color: #004aad;
+}
+
+form {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+form input, form select {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+button {
+    background: #004aad;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
