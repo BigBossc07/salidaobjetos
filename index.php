@@ -8,87 +8,90 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* Cuadro superior */
-.cuadro-superior {
-    width: 100%;
-    height: 58px;
-    background-color: #504ABC;
+    padding: 0;
+    margin: 0;
 }
 
 /* Cuadro central */
 .cuadro-central {
-    width: 100%;
-    max-width: 1280px;
+    width: 900px; /* ancho del cuadro principal */
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    gap: 25px;
+    margin-top: 20px; /* separación del cuadro superior */
 }
 
-/* Subcuadros internos ensanchados */
+/* Subcuadros estirados y centrados */
 .subcuadro {
     background-color: #f0f0f0;
-    border-radius: 10px;
-    padding: 35px; /* más sólido */
+    border-radius: 12px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 1150px; /* más ancho */
+    gap: 20px;
+    width: 100%;
+    max-width: 880px; 
     margin: 0 auto;
+    box-sizing: border-box;
 }
+
 .subcuadro h2 {
     text-align: left;
     color: #504ABC;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 20px;
 }
+
 .subcuadro input, .subcuadro select {
     width: 100%;
-    padding: 14px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 16px;
 }
+
 button {
     padding: 14px;
     width: 30%;
     background-color: #504ABC;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     align-self: center;
     font-weight: bold;
+    font-size: 16px;
 }
+
 button:hover {
     background-color: #403a9e;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
 }
+
 th, td {
     border: 1px solid #ccc;
     padding: 12px;
     text-align: left;
-    font-size: 15px;
 }
+
 th {
     background-color: #504ABC;
     color: white;
+    font-size: 16px;
 }
+
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
@@ -96,10 +99,9 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<!-- Cuadro superior -->
-<div class="cuadro-superior"></div>
+<!-- Cuadro morado arriba ocupando todo el ancho -->
+<div style="width: 100%; height: 58px; background-color: #504ABC;"></div>
 
-<!-- Cuadro central -->
 <div class="cuadro-central">
 
     <!-- Datos del Solicitante -->
@@ -144,8 +146,7 @@ tr:nth-child(even) {
                     <th>Asunto</th>
                 </tr>
             </thead>
-            <tbody>
-            </tbody>
+            <tbody></tbody>
         </table>
     </div>
 
